@@ -106,9 +106,9 @@ const Form = () => {
           onClick={() => {
             if (page === FormTitle.length - 1) {
               axios
-                .post("http://localhost:4000/create-pdf", formData)
+                .post("https://resume-builder-iota-ten.vercel.app/create-pdf", formData)
                 .then(() =>
-                  axios.get("http://localhost:4000/fetch-pdf", {
+                  axios.get("https://resume-builder-iota-ten.vercel.app/fetch-pdf", {
                     responseType: "blob",
                   })
                 )
